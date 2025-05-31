@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Add custom CSS for clip-path support in older browsers */
+@supports not (clip-path: ellipse(50% 50% at 70% 50%)) {
+  .sunflower-petal {
+    border-radius: 50% 50% 50% 50% / 100% 100% 0% 0%;
+  }
+}
